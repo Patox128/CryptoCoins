@@ -18,7 +18,7 @@ function App() {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container my-4">
       <div className="row">
         <h1 className="text-center">Crypto Coins</h1>
         <input

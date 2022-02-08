@@ -24,7 +24,8 @@ const RowOfCoins = ({ coin }) => {
       >
         {coin.price_change_percentage_24h} %
       </td>
-      <td>$ {coin.total_volume.toLocaleString("en-US")}</td>
+      <td>$ {coin.high_24h.toLocaleString("en-US")}</td>
+      <td>$ {coin.low_24h.toLocaleString("en-US")}</td>
     </tr>
   );
 };
