@@ -15,7 +15,8 @@ const TableCoins = ({ coins, search }) => {
           <th scope="col">Coin</th>
           <th scope="col">Price</th>
           <th scope="col">Price Change</th>
-          <th scope="col">24h Volume</th>
+          <th scope="col">Price high 24h</th>
+          <th scope="col">Price low 24h</th>
         </tr>
       </thead>
       <tbody>
