@@ -1,9 +1,11 @@
 import React from "react";
 import RowOfCoins from "./RowOfCoins";
 
-const TableCoins = ({coins, search}) => { 
-
-  const filterCoins = coins.filter(coin => coin.name.toLowerCase().includes(search.toLowerCase()))
+const TableCoins = ({ coins, search }) => {
+  const filterCoins = coins.filter( coin =>
+      coin.name.toLowerCase().includes(search.toLowerCase()) ||
+      coin.symbol.toLowerCase().includes(search.toLowerCase())
+  );
 
   return (
     <table className="table table-striped table-dark mt-4 table-hover">
@@ -17,12 +19,12 @@ const TableCoins = ({coins, search}) => {
         </tr>
       </thead>
       <tbody>
-        {filterCoins.map(coin => (
+        {filterCoins.map((coin) => (
           <RowOfCoins coin={coin} key={coin.id} />
         ))}
       </tbody>
     </table>
-  )
+  );
 };
 
 export default TableCoins;
