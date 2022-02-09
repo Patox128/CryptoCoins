@@ -8,7 +8,7 @@ const TableCoins = ({ coins, search }) => {
   );
 
   return (
-    <table className="table table-striped table-dark mt-4 table-hover">
+    <table className="table align-middle table-striped table-dark mt-4 table-hover">
       <thead>
         <tr>
           <th scope="col">#</th>

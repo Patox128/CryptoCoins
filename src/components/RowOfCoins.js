@@ -3,12 +3,12 @@ import React from "react";
 const RowOfCoins = ({ coin }) => {
   return (
     <tr>
-      <th scope="col">{coin.market_cap_rank}</th>
+      <th>{coin.market_cap_rank}</th>
       <td>
         <img
           src={coin.image}
           alt={coin.name}
-          style={{ width: "3%" }}
+          style={{ width: "25px", height: "25px" }}
           className="me-4"
         />
         <span>
